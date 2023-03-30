@@ -405,6 +405,7 @@ section{
     header{
         padding: 12px 2.5%;
         transition: .1s;
+        backdrop-filter: blur(10px);
     }
     section{
         padding: 110px 3% 60px;
@@ -425,6 +426,9 @@ section{
     }
     .home{
         height: 87vh;
+    }
+    header{
+        backdrop-filter: blur(10px);
     }
 }
 @media(max-width:920px){
@@ -470,5 +474,8 @@ section{
     }
     .navlist.open{
         top:100%
+    }
+    header{
+        backdrop-filter: blur(10px);
     }
 }
