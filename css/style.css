@@ -35,6 +35,7 @@ header{
     padding: 22px 15%;
     border-bottom:1px solid transparent;
     transition: all .45s ease;
+    backdrop-filter: blur(10px);
 }
 .logo{
     color: var(--text-color);
