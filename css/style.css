@@ -443,6 +443,9 @@ section{
     .contact{
         grid-template-columns: 1fr;
     }
+        header{
+        backdrop-filter: blur(10px);
+    }
 }
 @media(max-width:480px) {
     #menu-icon{
@@ -473,7 +476,7 @@ section{
         color: var(--text-color);
     }
     .navlist.open{
-        top:100%
+        top:100%;
     }
     header{
         backdrop-filter: blur(10px);
