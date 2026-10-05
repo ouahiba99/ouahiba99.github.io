@@ -482,3 +482,17 @@ section{
         backdrop-filter: blur(10px);
     }
 }
+
+/* ---- Additions: experience section, visible project cards, certifications ---- */
+.experience{ background: var(--bg-color); }
+.experience .box{ background: var(--second-bg-color); }
+.experience .box small{ display:block; color: var(--main-color); font-size: 14px; margin-bottom: 4px; }
+.experience .box h4{ font-size: 15px; font-weight: 500; color: var(--second-color); margin-bottom: 15px; }
+.experience .box ul li{ color: var(--second-color); font-size: .95rem; line-height: 1.7; margin-bottom: 6px; list-style: disc; margin-left: 18px; }
+.portfolio .row{ background: var(--second-bg-color); }
+.portfolio .layer{ position: relative; height: auto; align-items: flex-start; padding: 35px 40px; background: none; }
+.portfolio .row:hover .layer{ height: auto; }
+.portfolio .layer h5{ font-size: 20px; }
+.portfolio .layer small{ color: var(--main-color); display:block; margin-bottom: 15px; }
+.certs{ margin-top: 2rem; display:flex; flex-wrap:wrap; gap:.8rem; }
+.certs span{ background: var(--second-bg-color); color: var(--second-color); padding: 8px 14px; border-radius: 5px; font-size: .9rem; }
