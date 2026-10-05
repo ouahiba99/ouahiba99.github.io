@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ouahiba Ahmid | DevOps Engineer</title>
+    <meta name="description" content="Portfolio of Ouahiba Ahmid, DevOps Engineer: Linux, Docker, monitoring, automation, cloud and data platforms.">
+    <meta name="theme-color" content="#202020">
+    <meta property="og:title" content="Ouahiba Ahmid | DevOps Engineer">
+    <meta property="og:description" content="Production support, automation, monitoring, cloud and data platforms.">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <!-- Header -->
 <header>
     <a href="#" class="logo"><span>Ouahiba</span> Ahmid</a>
-    <ul class="navlist">
+    <ul class="navlist" id="navlist">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About&nbsp;Me</a></li>
         <li><a href="#services">Skills</a></li>
@@ -19,9 +27,10 @@
         <li><a href="#portfolio">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="bx bx-menu" id="menu-icon"></div>
+    <button class="bx bx-menu" id="menu-icon" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navlist"></button>
 </header>
 
+<main id="main">
 <!-- Home Section -->
 <section class="home" id="home">
     <div class="home-text">
@@ -34,7 +43,19 @@
         <p>Cloud, Infrastructure and Automation. Production support, Linux, Docker, monitoring, data platforms and MLOps. Welcome to my <span>portfolio</span>.</p>
         <div class="button">
             <a href="#about" class="btn">About Me</a>
+            <a href="Ouahiba_Ahmid_CV.pdf" class="btn btn-ghost" download>Download CV</a>
         </div>
+    </div>
+    <div class="hero-panel" role="img" aria-label="Summary: DevOps Engineer, 93% SLA compliance, open to DevOps, Cloud and Data Engineering roles">
+        <p class="prompt">$ status --current</p>
+        <dl>
+            <dt>role</dt><dd>DevOps Engineer</dd>
+            <dt>stack</dt><dd>Docker, Linux, Bash, Git</dd>
+            <dt>observe</dt><dd>Prometheus, Grafana, Kibana</dd>
+            <dt>data</dt><dd>Spark, PostgreSQL, Airflow</dd>
+            <dt>sla</dt><dd>93%, 40+ tickets a month</dd>
+            <dt>open to</dt><dd>DevOps, Cloud, Data Engineering</dd>
+        </dl>
     </div>
 </section>
 
@@ -46,6 +67,11 @@
         <p>I support production environments with Linux, containerized applications, monitoring, automation, cloud and data platforms. I have hands-on experience with L2/L3 support, incident management, troubleshooting, deployment support and log analysis, resolving 40+ tickets monthly with 93% SLA compliance. My telecom and networking background (State Engineer, ENSTTIC Oran) gives me a strong foundation across infrastructure, cloud, data and MLOps.</p>
         <a href="#contact" class="btn">Get in Touch</a>
     </div>
+    <dl class="about-facts">
+        <div><dt>40+</dt><dd>L2/L3 tickets resolved every month</dd></div>
+        <div><dt>93%</dt><dd>SLA compliance in production support</dd></div>
+        <div><dt>2021</dt><dd>First hands-on telecom and infrastructure work</dd></div>
+    </dl>
 </section>
 
 <!-- Skills Section -->
@@ -153,7 +179,7 @@
                 <h5>Production-Oriented MLOps Pipeline</h5>
                 <small>Python · Docker · PostgreSQL · Scikit-learn · Git</small>
                 <p>ML pipeline on the Olist dataset to predict late deliveries, with reproducible Python/SQL data preparation and feature engineering, and containerized components.</p>
-                <a href="https://github.com/ouahiba99"><i class="bx bx-link-external"></i></a>
+                <a href="https://github.com/ouahiba99" aria-label="View on GitHub"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
         <div class="row">
@@ -161,7 +187,7 @@
                 <h5>Data Infrastructure &amp; Analytics Platform</h5>
                 <small>Python · PostgreSQL · Docker · Spark · ETL</small>
                 <p>Reusable ETL and data-processing workflows built with Python, SQL, PostgreSQL, Apache Spark, Docker and Git.</p>
-                <a href="https://github.com/ouahiba99"><i class="bx bx-link-external"></i></a>
+                <a href="https://github.com/ouahiba99" aria-label="View on GitHub"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
         <div class="row">
@@ -169,7 +195,7 @@
                 <h5>Data Analysis &amp; BI Tool</h5>
                 <small>React · TypeScript · ECharts · JSON · Zod</small>
                 <p>Co-developed reusable dashboard components with JSON validation and dynamic Apache ECharts visualizations.</p>
-                <a href="https://github.com/ouahiba99"><i class="bx bx-link-external"></i></a>
+                <a href="https://github.com/ouahiba99" aria-label="View on GitHub"><i class="bx bx-link-external"></i></a>
             </div>
         </div>
     </div>
@@ -181,26 +207,28 @@
         <h2>Contact <span>Me</span></h2>
         <h4>Open to DevOps, Cloud and Data Engineering roles</h4>
         <p>Based in Algeria, working remotely.</p>
-        <div class="list">
+        <ul class="list">
             <li><b>Phone:</b> +213 659 190 740</li>
-            <li><b>Email:</b> ahmidouahiba@gmail.com</li>
-        </div>
+            <li><b>Email:</b> <a href="mailto:ahmidouahiba@gmail.com">ahmidouahiba@gmail.com</a></li>
+        </ul>
         <div class="contact-icons">
-            <a href="https://linkedin.com/in/datadrivenmind" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
-            <a href="https://github.com/ouahiba99" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
-            <a href="mailto:ahmidouahiba@gmail.com"><i class="bx bx-envelope"></i></a>
+            <a href="https://linkedin.com/in/datadrivenmind" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/ouahiba99" aria-label="GitHub" target="_blank" rel="noopener"><i class="bx bxl-github"></i></a>
+            <a href="mailto:ahmidouahiba@gmail.com" aria-label="Email"><i class="bx bx-envelope"></i></a>
         </div>
     </div>
     <div class="contact-form">
         <form action="mailto:ahmidouahiba@gmail.com" method="post" enctype="text/plain">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <input type="tel" placeholder="Your Number" required>
-            <textarea cols="35" rows="10" placeholder="How can I help you?" required></textarea>
+            <input type="text" name="name" autocomplete="name" aria-label="Your name" placeholder="Your Name" required>
+            <input type="email" name="email" autocomplete="email" aria-label="Your email" placeholder="Your Email" required>
+            <input type="tel" name="phone" autocomplete="tel" aria-label="Your phone number" placeholder="Your Number" required>
+            <textarea name="message" aria-label="Your message" cols="35" rows="10" placeholder="How can I help you?" required></textarea>
             <input type="submit" value="Send Message" class="submit">
         </form>
     </div>
 </section>
+
+</main>
 
 <!-- Footer -->
 <section class="end">
@@ -214,10 +242,21 @@
 
 <script>
     const menu = document.getElementById('menu-icon');
-    const nav = document.querySelector('.navlist');
-    menu.addEventListener('click', () => nav.classList.toggle('open'));
-    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+    const nav = document.getElementById('navlist');
+    const links = [...nav.querySelectorAll('a')];
+    const setMenu = open => {
+        nav.classList.toggle('open', open);
+        menu.setAttribute('aria-expanded', open);
+        menu.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        menu.classList.toggle('bx-menu', !open);
+        menu.classList.toggle('bx-x', open);
+    };
+    menu.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+    links.forEach(a => a.addEventListener('click', () => setMenu(false)));
+    const io = new IntersectionObserver(entries => entries.forEach(e => {
+        if (e.isIntersecting) links.forEach(l => l.classList.toggle('active', l.hash === '#' + e.target.id));
+    }), { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section[id]').forEach(s => io.observe(s));
 </script>
 </body>
 </html>
-
