@@ -11,7 +11,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--header-height);
+    scroll-padding-top: 0;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -1161,92 +1161,4 @@ section {
         animation-iteration-count: 1 !important;
         transition-duration: 0.01ms !important;
     }
-    /* Fix Skills and Experience section positioning */
-#services,
-#experience {
-    position: relative;
-    scroll-margin-top: 0;
-    padding-top: clamp(55px, 7vw, 85px);
-    padding-bottom: clamp(55px, 7vw, 85px);
-}
-
-/* Keep section headings properly positioned */
-#services .main-text,
-#experience .main-text {
-    position: relative;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-/* Prevent excessive spacing before cards */
-#services .services-content,
-#experience .services-content {
-    margin-top: 30px;
-}
-
-/* Tablet and mobile adjustments */
-@media (max-width: 900px) {
-    #services,
-    #experience {
-        padding-top: 55px;
-        padding-bottom: 55px;
-    }
-}
-
-@media (max-width: 600px) {
-    #services,
-    #experience {
-        padding-top: 45px;
-        padding-bottom: 45px;
-    }
-
-    #services .services-content,
-    #experience .services-content {
-        margin-top: 24px;
-    }
-}
-/* Fix Skills and Experience section positioning */
-#services,
-#experience {
-    position: relative;
-    scroll-margin-top: 0;
-    padding-top: clamp(55px, 7vw, 85px);
-    padding-bottom: clamp(55px, 7vw, 85px);
-}
-
-/* Keep section headings properly positioned */
-#services .main-text,
-#experience .main-text {
-    position: relative;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-/* Prevent excessive spacing before cards */
-#services .services-content,
-#experience .services-content {
-    margin-top: 30px;
-}
-
-/* Tablet and mobile adjustments */
-@media (max-width: 900px) {
-    #services,
-    #experience {
-        padding-top: 55px;
-        padding-bottom: 55px;
-    }
-}
-
-@media (max-width: 600px) {
-    #services,
-    #experience {
-        padding-top: 45px;
-        padding-bottom: 45px;
-    }
-
-    #services .services-content,
-    #experience .services-content {
-        margin-top: 24px;
-    }
-}
 }
